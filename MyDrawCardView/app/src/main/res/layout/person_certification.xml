@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tv_item"
+    android:background="@drawable/ic_approve_small"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_person_self2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/ic_self_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_person_self2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="资料认证"
+        android:textColor="#ffffff"
+        android:textSize="15.4sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_phone_approve"
+            style="@style/textview_style_person_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_phone_approve"
+            android:text="手机认证" />
+
+        <TextView
+            android:id="@+id/tv_truename_approve"
+            style="@style/textview_style_person_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/tv_phone_approve"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_phone_approve"
+            android:text="实名认证" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_email_approve"
+            style="@style/textview_style_person_approve"
+            android:layout_below="@+id/tv_phone_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_phone_approve"
+            android:text="邮箱认证" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_education_approve"
+            style="@style/textview_style_person_approve"
+            android:layout_below="@+id/tv_truename_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/tv_email_approve"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_phone_approve"
+            android:text="学历认证" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
